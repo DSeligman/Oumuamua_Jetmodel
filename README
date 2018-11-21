@@ -1,0 +1,3 @@
+Compile with the command
+
+g++ solveode.cxx linalgop.cxx -lgsl -lgslcblas -lm
