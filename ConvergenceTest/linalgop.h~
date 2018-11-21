@@ -1,0 +1,12 @@
+#ifndef LINALGOP_H    // To make sure you don't declare the function more than once by including the header multiple times.
+#define LINALGOP_H
+
+
+void invert( double *Rinv, double *R,int nx, int ny);
+void transpose(double *Rtran, double *R,int nx, int ny);
+void matmul(double * X,double * A, double * B,int nx, int ny);
+void matvecmul(double * X,double * A, double * B,int nx, int ny);
+void wrapper(double *dRdt,double dLydt,double dLzdt,
+             double *R,double Ly,double Lz, double * Ie,
+             double a, double b, double c, double alpha, int nx, int ny);
+#endif
